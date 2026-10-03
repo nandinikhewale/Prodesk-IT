@@ -1,3 +1,5 @@
+console.log("Script is running successfully!");
+
 (() => {
     const init = () => {
         const root = document.body
