@@ -6,54 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Prodesk IT is a digital marketing agency built for measurable growth." />
     <title>Prodesk IT — Digital marketing, made useful</title>
+    <link rel="icon" href="data:," />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=optional"
         rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="site-body">
     <header class="site-header">
-        <nav class="nav container" aria-label="Main navigation">
-            <a class="brand" href="#top" aria-label="Prodesk IT home"><span class="brand__mark"
-                    aria-hidden="true"><span></span></span><span
-                    class="brand__name">prodesk<span>IT</span></span></a><button class="nav__toggle" type="button"
-                aria-expanded="false" aria-controls="primary-menu">
-                <span class="sr-only">Open menu</span><span class="nav__toggle-line"></span><span
-                    class="nav__toggle-line"></span><span class="nav__toggle-line"></span>
-            </button>
+        <nav class="nav site-shell" aria-label="Main navigation">
+            <a class="brand" href="#top">
+                <span class="brand__mark" aria-hidden="true"><span class="brand__mark-dot"></span></span>
+                <span class="brand__name">prodesk<span class="brand__name-tag">IT</span></span>
+            </a>
+                <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+                    <span class="nav__toggle-label">Open menu</span>
+                    <span class="nav__toggle-line"></span>
+                    <span class="nav__toggle-line"></span>
+                    <span class="nav__toggle-line"></span>
+                </button>
             <div class="nav__menu" id="primary-menu">
-                <a href="#services">Services</a><a href="#why-us">Why us</a><a href="#work">Approach</a><a
-                    href="#faq">FAQ</a><a href="#contact">Contact</a><button class="theme-toggle" type="button"
-                    aria-label="Switch to dark mode" aria-pressed="false">
-                    <span class="theme-toggle__sun" aria-hidden="true">☀</span><span class="theme-toggle__moon"
-                        aria-hidden="true">☾</span><span class="sr-only">Toggle dark mode</span>
+                <a class="nav__link" href="#services">Services</a>
+                <a class="nav__link" href="#why-us">Why us</a>
+                <a class="nav__link" href="#work">Approach</a>
+                <a class="nav__link" href="#faq">FAQ</a>
+                <a class="nav__link" href="#contact">Contact</a>
+                <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+                    <span class="theme-toggle__sun" aria-hidden="true">☀</span>
+                    <span class="theme-toggle__moon" aria-hidden="true">☾</span>
+                    <span class="theme-toggle__label">Toggle dark mode</span>
                 </button>
             </div>
         </nav>
     </header>
+
+
     <main id="top">
-        <section class="hero container">
+
+
+        <section class="hero site-shell">
             <div class="hero__copy">
-                <p class="eyebrow">
-                    <span class="eyebrow__dot"></span>Digital marketing, made useful
+                <p class="section-label">
+                    <span class="section-label__dot"></span>Digital marketing, made useful
                 </p>
-                <h1>Make your next<br /><em>move matter.</em></h1>
+                <h1 class="hero__title">Make your next<br><em>move matter.</em></h1>
                 <p class="hero__lede">
                     Prodesk IT helps ambitious teams turn digital complexity into clear,
                     compounding growth.
                 </p>
                 <div class="hero__actions">
-                    <a class="button button--primary" href="#contact">Start a conversation <span>↗</span></a><a
-                        class="button button--ghost" href="#services">Explore our services <span>↓</span></a>
+                    <a class="cta cta--primary" href="#contact">Start a conversation <span>↗</span></a>
+                    <a class="cta cta--ghost" href="#services">Explore our services <span>↓</span></a>
                 </div>
+
+
                 <div class="hero__proof">
                     <span class="hero__proof-line"></span>Trusted by teams building
                     what&apos;s next
                 </div>
+
             </div>
+
+
             <div class="hero__visual" aria-label="Growth dashboard preview" role="img">
                 <div class="orb orb--one"></div>
                 <div class="orb orb--two"></div>
@@ -67,7 +84,7 @@
                     <div class="chart">
                         <span class="chart__grid chart__grid--one"></span><span
                             class="chart__grid chart__grid--two"></span><svg viewBox="0 0 420 130"
-                            preserveAspectRatio="none" aria-hidden="true">
+                            class="chart__svg" preserveAspectRatio="none" aria-hidden="true">
                             <path
                                 d="M0 116 C35 108 45 112 72 94 S112 98 140 78 S177 85 202 58 S245 76 270 49 S302 58 330 27 S370 43 420 7">
                             </path>
@@ -78,25 +95,31 @@
                     </div>
                 </div>
                 <div class="floating-stat floating-stat--top">
-                    <strong>4.8x</strong><small>ROAS average</small>
+                    <strong class="floating-stat__value">4.8x</strong><small class="floating-stat__caption">ROAS average</small>
                 </div>
                 <div class="floating-stat floating-stat--bottom">
-                    <strong>28.4k</strong><small>New visitors</small>
+                    <strong class="floating-stat__value">28.4k</strong><small class="floating-stat__caption">New visitors</small>
                 </div>
             </div>
         </section>
+
+
         <section class="logo-strip" aria-label="Client partnerships">
-            <div class="container logo-strip__inner">
-                <span>Selected partners</span><span>northstar</span><span>form<span
-                        class="logo-strip__accent">/</span>labs</span><span>arc<span
-                        class="logo-strip__accent">.</span>studio</span><span>vertex</span>
+
+            <div class="site-shell logo-strip__inner">
+                <span class="logo-strip__label">Selected partners</span><span class="logo-strip__name">northstar</span><span class="logo-strip__name">form<span
+                        class="logo-strip__accent">/</span>labs</span><span class="logo-strip__name">arc<span
+                        class="logo-strip__accent">.</span>studio</span><span class="logo-strip__name">vertex</span>
             </div>
+
         </section>
-        <section class="services section container" id="services">
+
+
+        <section class="services section-block site-shell" id="services">
             <div class="section-heading">
                 <div>
-                    <p class="eyebrow">What we do</p>
-                    <h2>The full<br /><em>growth stack.</em></h2>
+                    <p class="section-label">What we do</p>
+                    <h2 class="section-heading__title">The full<br /><em>growth stack.</em></h2>
                 </div>
                 <p class="section-heading__intro">
                     One connected team across strategy, creative, media, and technology.
@@ -105,115 +128,115 @@
             </div>
             <div class="services__grid">
                 <article class="service-card">
-                    <b>01</b>
-                    <h3>SEO &amp; content</h3>
-                    <p>
+                    <b class="service-card__index">01</b>
+                    <h3 class="service-card__title">SEO &amp; content</h3>
+                    <p class="service-card__text">
                         Own the search conversation with technical SEO, editorial
                         strategy, and content that compounds.
                     </p>
-                    <span>Technical SEO · Content strategy</span>
+                    <span class="service-card__meta">Technical SEO · Content strategy</span>
                 </article>
                 <article class="service-card">
-                    <b>02</b>
-                    <h3>Paid media</h3>
-                    <p>
+                    <b class="service-card__index">02</b>
+                    <h3 class="service-card__title">Paid media</h3>
+                    <p class="service-card__text">
                         Build efficient acquisition loops across search, social, and
                         emerging channels.
                     </p>
-                    <span>Paid search · Paid social</span>
+                    <span class="service-card__meta">Paid search · Paid social</span>
                 </article>
                 <article class="service-card">
-                    <b>03</b>
-                    <h3>Brand strategy</h3>
-                    <p>
+                    <b class="service-card__index">03</b>
+                    <h3 class="service-card__title">Brand strategy</h3>
+                    <p class="service-card__text">
                         Define a memorable position, voice, and identity that makes your
                         next chapter unmistakable.
                     </p>
-                    <span>Positioning · Messaging</span>
+                    <span class="service-card__meta">Positioning · Messaging</span>
                 </article>
                 <article class="service-card">
-                    <b>04</b>
-                    <h3>Web design &amp; development</h3>
-                    <p>
+                    <b class="service-card__index">04</b>
+                    <h3 class="service-card__title">Web design &amp; development</h3>
+                    <p class="service-card__text">
                         Turn high-intent traffic into action with fast, accessible,
                         conversion-focused experiences.
                     </p>
-                    <span>UX / UI · Development</span>
+                    <span class="service-card__meta">UX / UI · Development</span>
                 </article>
                 <article class="service-card">
-                    <b>05</b>
-                    <h3>Social media</h3>
-                    <p>
+                    <b class="service-card__index">05</b>
+                    <h3 class="service-card__title">Social media</h3>
+                    <p class="service-card__text">
                         Create a consistent, culturally relevant presence that earns
                         attention and trust.
                     </p>
-                    <span>Social strategy · Community</span>
+                    <span class="service-card__meta">Social strategy · Community</span>
                 </article>
                 <article class="service-card">
-                    <b>06</b>
-                    <h3>Email marketing</h3>
-                    <p>
+                    <b class="service-card__index">06</b>
+                    <h3 class="service-card__title">Email marketing</h3>
+                    <p class="service-card__text">
                         Keep your audience moving with lifecycle journeys that feel
                         personal and perform.
                     </p>
-                    <span>Automation · Retention</span>
+                    <span class="service-card__meta">Automation · Retention</span>
                 </article>
                 <article class="service-card">
-                    <b>07</b>
-                    <h3>Analytics &amp; CRO</h3>
-                    <p>
+                    <b class="service-card__index">07</b>
+                    <h3 class="service-card__title">Analytics &amp; CRO</h3>
+                    <p class="service-card__text">
                         Find the signal in your data and turn every insight into a smarter
                         experiment.
                     </p>
-                    <span>Measurement · Experimentation</span>
+                    <span class="service-card__meta">Measurement · Experimentation</span>
                 </article>
                 <article class="service-card">
-                    <b>08</b>
-                    <h3>Influencer marketing</h3>
-                    <p>
+                    <b class="service-card__index">08</b>
+                    <h3 class="service-card__title">Influencer marketing</h3>
+                    <p class="service-card__text">
                         Partner with the right voices to introduce your brand with
                         credibility and context.
                     </p>
-                    <span>Partnerships · Creator campaigns</span>
+                    <span class="service-card__meta">Partnerships · Creator campaigns</span>
                 </article>
                 <article class="service-card">
-                    <b>09</b>
-                    <h3>Reputation management</h3>
-                    <p>
+                    <b class="service-card__index">09</b>
+                    <h3 class="service-card__title">Reputation management</h3>
+                    <p class="service-card__text">
                         Protect and strengthen your digital reputation across every
                         meaningful touchpoint.
                     </p>
-                    <span>Reviews · PR support</span>
+                    <span class="service-card__meta">Reviews · PR support</span>
                 </article>
             </div>
         </section>
-        <section class="why section" id="why-us">
-            <div class="container why__inner">
+        <section class="why section-block" id="why-us">
+            <div class="site-shell why__inner">
                 <div>
-                    <p class="eyebrow">Why Prodesk IT</p>
-                    <h2>Less noise.<br /><em>More signal.</em></h2>
+                    <p class="why__label">Why Prodesk IT</p>
+                    <h2 class="why__title">Less noise.<br /><em>More signal.</em></h2>
                 </div>
                 <div class="why__grid">
-                    <article>
-                        <b>01</b>
-                        <h3>Senior thinking</h3>
-                        <p>
+                    <article class="why-card">
+                        <b class="why-card__index">01</b>
+                        <h3 class="why-card__title">Senior thinking</h3>
+                        <p class="why-card__text">
                             Get strategic clarity from people who have done the work, not
                             passed it down a chain.
                         </p>
                     </article>
-                    <article>
-                        <b>02</b>
-                        <h3>Built to learn</h3>
-                        <p>
+                    <article class="why-card">
+                        <b class="why-card__index">02</b>
+                        <h3 class="why-card__title">Built to learn</h3>
+                        <p class="why-card__text">
                             Every campaign creates a smarter next move through transparent
                             measurement and iteration.
                         </p>
                     </article>
-                    <article>
-                        <b>03</b>
-                        <h3>Commercial focus</h3>
-                        <p>
+                    <article class="why-card">
+                        <b class="why-card__index">03</b>
+                        <h3 class="why-card__title">Commercial focus</h3>
+                        <p class="why-card__text">
                             We connect marketing activity to the numbers your leadership
                             team cares about.
                         </p>
@@ -221,14 +244,14 @@
                 </div>
             </div>
         </section>
-        <section class="approach section" id="work">
-            <div class="container approach__inner">
+        <section class="approach section-block" id="work">
+            <div class="site-shell approach__inner">
                 <div>
-                    <p class="eyebrow">Our approach</p>
-                    <h2>Clarity creates<br /><em>momentum.</em></h2>
+                    <p class="section-label">Our approach</p>
+                    <h2 class="approach__title">Clarity creates<br /><em>momentum.</em></h2>
                 </div>
                 <div class="approach__content">
-                    <p>
+                    <p class="approach__content-text">
                         Good marketing shouldn&apos;t feel like guesswork. We find the
                         signal, make a plan, and stay close enough to the work to make
                         every iteration count.
@@ -237,16 +260,16 @@
                 </div>
             </div>
         </section>
-        <section class="testimonials section container">
+        <section class="testimonials section-block site-shell">
             <div class="section-heading">
                 <div>
-                    <p class="eyebrow">Client perspective</p>
-                    <h2>Good work<br /><em>speaks loudly.</em></h2>
+                    <p class="section-label">Client perspective</p>
+                    <h2 class="section-heading__title">Good work<br /><em>speaks loudly.</em></h2>
                 </div>
             </div>
             <div class="testimonial-grid">
-                <blockquote>
-                    <p>
+                <blockquote class="testimonial__quote">
+                    <p class="testimonial__quote-text">
                         “Prodesk IT gave us the clarity and momentum we needed. Within one
                         quarter, our qualified pipeline was up 62%.”
                     </p>
@@ -254,8 +277,8 @@
                         <strong>Sarah Chen</strong><span>VP Marketing, Northstar</span>
                     </footer>
                 </blockquote>
-                <blockquote>
-                    <p>
+                <blockquote class="testimonial__quote">
+                    <p class="testimonial__quote-text">
                         “They feel like an extension of our team. Sharp strategy,
                         beautiful creative, and absolutely no wasted motion.”
                     </p>
@@ -265,82 +288,98 @@
                 </blockquote>
             </div>
         </section>
-        <section class="faq section container" id="faq">
+        <section class="showcase section-block site-shell" aria-labelledby="showcase-title">
+            <div class="showcase__content">
+                <p class="section-label">Results in motion</p>
+                <h2 id="showcase-title" class="section-heading__title">Clear signals.<br /><em>Measured growth.</em></h2>
+            </div>
+            <figure class="showcase__media">
+                <img
+                    class="showcase__image"
+                    src="assets/project-showcase.webp"
+                    width="960"
+                    height="720"
+                    loading="lazy"
+                    alt="Marketing analytics dashboard preview for Prodesk IT campaign performance"
+                />
+            </figure>
+        </section>
+        <section class="faq section-block site-shell" id="faq">
             <div class="section-heading">
                 <div>
-                    <p class="eyebrow">Questions, answered</p>
-                    <h2>The useful<br /><em>details.</em></h2>
+                    <p class="section-label">Questions, answered</p>
+                    <h2 class="section-heading__title">The useful<br /><em>details.</em></h2>
                 </div>
             </div>
             <div class="faq__list">
-                <details>
-                    <summary>
-                        What kind of businesses do you work with?<span>+</span>
+                <details class="faq__item">
+                    <summary class="faq__summary">
+                        What kind of businesses do you work with?<span class="faq__plus">+</span>
                     </summary>
-                    <p>
+                    <p class="faq__content">
                         We partner with ambitious teams, from early-stage startups to
                         established companies, who want a clear strategy and measurable
                         growth.
                     </p>
                 </details>
-                <details>
-                    <summary>How do you measure success?<span>+</span></summary>
-                    <p>
+                <details class="faq__item">
+                    <summary class="faq__summary">How do you measure success?<span class="faq__plus">+</span></summary>
+                    <p class="faq__content">
                         We agree on the metrics that matter first, then connect campaigns
                         to qualified pipeline, revenue, retention, and brand momentum.
                     </p>
                 </details>
-                <details>
-                    <summary>
-                        Can you work with our existing team?<span>+</span>
+                <details class="faq__item">
+                    <summary class="faq__summary">
+                        Can you work with our existing team?<span class="faq__plus">+</span>
                     </summary>
-                    <p>
+                    <p class="faq__content">
                         Absolutely. We can be your embedded growth team, a specialist
                         partner, or the strategic layer that aligns the people you already
                         have.
                     </p>
                 </details>
-                <details>
-                    <summary>How quickly can we get started?<span>+</span></summary>
-                    <p>
+                <details class="faq__item">
+                    <summary class="faq__summary">How quickly can we get started?<span class="faq__plus">+</span></summary>
+                    <p class="faq__content">
                         After an initial conversation, we shape a focused discovery sprint
                         and a practical roadmap tailored to your goals.
                     </p>
                 </details>
             </div>
         </section>
-        <section class="contact section container" id="contact">
+        <section class="contact section-block site-shell" id="contact">
             <div class="contact__card">
                 <div>
-                    <p class="eyebrow">Have a challenge?</p>
-                    <h2>Let&apos;s make<br /><em>something happen.</em></h2>
+                    <p class="contact__label">Have a challenge?</p>
+                    <h2 class="contact__title">Let&apos;s make<br /><em>something happen.</em></h2>
                 </div>
-                <a class="button button--light" href="mailto:hello@prodeskit.com">hello@prodeskit.com ↗</a>
+                <a class="cta cta--light" href="mailto:hello@prodeskit.com">hello@prodeskit.com ↗</a>
             </div>
         </section>
     </main>
     <footer class="site-footer">
-        <div class="container site-footer__grid">
-            <div>
+        <div class="site-shell site-footer__grid">
+            <div class="site-footer__brand">
                 <a class="brand" href="#top"><span class="brand__mark"><span></span></span><span
                         class="brand__name">prodesk<span>IT</span></span></a>
                 <p class="site-footer__tagline">Strategy for the next chapter.</p>
             </div>
-            <div>
+            <div class="site-footer__group">
                 <p class="site-footer__label">Explore</p>
-                <a href="#services">Services</a><a href="#why-us">Why choose us</a><a href="#work">Our approach</a>
+                <a class="site-footer__link" href="#services">Services</a><a class="site-footer__link" href="#why-us">Why choose us</a><a class="site-footer__link" href="#work">Our approach</a>
             </div>
-            <div>
+            <div class="site-footer__group">
                 <p class="site-footer__label">Connect</p>
-                <a href="mailto:hello@prodeskit.com">hello@prodeskit.com</a><a href="#contact">Start a project</a><a
+                <a class="site-footer__link" href="mailto:hello@prodeskit.com">hello@prodeskit.com</a><a class="site-footer__link" href="#contact">Start a project</a><a class="site-footer__link"
                     href="#faq">FAQs</a>
             </div>
         </div>
-        <div class="container site-footer__bottom">
-            <span>© 2026 Prodesk IT. All rights reserved.</span><span>Built for measurable growth.</span>
+        <div class="site-shell site-footer__bottom">
+            <span class="site-footer__copyright">© 2026 Prodesk IT. All rights reserved.</span><span class="site-footer__meta">Built for measurable growth.</span>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
